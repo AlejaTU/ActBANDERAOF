@@ -1,5 +1,24 @@
 <resources>
     <string name="app_name">Banderas de España</string>
+    <string name="andalucia_frase">"¡Olé! Tierra de alegría y flamenco."</string>
+    <string name="aragon_frase">"Noble y fiel, ¡siempre en mi corazón!"</string>
+    <string name="asturias_frase">"Patria querida, tierra de sidra y montañas."</string>
+    <string name="baleares_frase">"Donde el sol y el mar se abrazan."</string>
+    <string name="canarias_frase">"Un pequeño paraíso en el Atlántico."</string>
+    <string name="cantabria_frase">"Infinita, verde como la esperanza."</string>
+    <string name="castilla_leon_frase">"Historia viva en cada piedra."</string>
+    <string name="castilla_mancha_frase">"Molinos y llanuras infinitas."</string>
+    <string name="catalunya_frase">"Terra de tradicions i bellesa."</string>
+    <string name="ceuta_frase">"La puerta entre dos mundos."</string>
+    <string name="extremadura_frase">"Donde el tiempo se detiene en la belleza natural."</string>
+    <string name="galicia_frase">"Donde la morriña siempre te llama de vuelta."</string>
+    <string name="la_rioja_frase">"Donde el vino cuenta historias."</string>
+    <string name="madrid_frase">"Donde el kilómetro cero une a todos."</string>
+    <string name="melilla_frase">"Mezcla de culturas y tradiciones."</string>
+    <string name="murcia_frase">"¡Qué hermosa eres, tierra de huerta y sol!"</string>
+    <string name="navarra_frase">"Donde los Sanfermines llenan de pasión el verano."</string>
+    <string name="pais_vasco_frase">"Euskadi, tierra de gastronomía y fuerza."</string>
+    <string name="valencia_frase">"La tierra de la paella y la pólvora de las Fallas."</string>
 
 
 </resources>

@@ -1,134 +1,111 @@
 package com.example.actbanderaof.provider
 
+import android.content.Context
 import com.example.actbanderaof.R
 import com.example.actbanderaof.model.Bandera
 
 
-public class BanderaProvider {
+class BanderaProvider {
 
-    companion object{
-        //para que sea accesible esa funcion desde fuera???
-        //proporcionar listado de banderas
-        fun cargarLista():MutableList<Bandera> {
-            return mutableListOf<Bandera>(
+    companion object {
+        fun cargarLista(context: Context): MutableList<Bandera> {
+            return mutableListOf(
                 Bandera(
                     "Andalucia",
-                    "Tierra Sur",
+                    context.getString(R.string.andalucia_frase),
                     R.drawable.andalucia
-
                 ),
                 Bandera(
                     "Aragon",
-                    "Tierra Norte",
+                    context.getString(R.string.aragon_frase),
                     R.drawable.aragon
-
                 ),
                 Bandera(
                     "Asturias",
-                    "Tierra Norte",
+                    context.getString(R.string.asturias_frase),
                     R.drawable.asturias
-
                 ),
                 Bandera(
                     "Baleares",
-                    "Tierra Norte",
+                    context.getString(R.string.baleares_frase),
                     R.drawable.baleares
-
                 ),
                 Bandera(
                     "Canarias",
-                    "Tierra Norte",
+                    context.getString(R.string.canarias_frase),
                     R.drawable.canarias
-
                 ),
                 Bandera(
                     "Cantabria",
-                    "Tierra Norte",
+                    context.getString(R.string.cantabria_frase),
                     R.drawable.cantabria
-
                 ),
                 Bandera(
                     "Castilla y Leon",
-                    "Tierra Norte",
+                    context.getString(R.string.castilla_leon_frase),
                     R.drawable.castillaleon
-
                 ),
                 Bandera(
                     "Castilla y la Mancha",
-                    "Tierra Norte",
+                    context.getString(R.string.castilla_mancha_frase),
                     R.drawable.castillamancha
-
                 ),
                 Bandera(
                     "Catalunya",
-                    "Tierra Norte",
+                    context.getString(R.string.catalunya_frase),
                     R.drawable.catalunya
-
                 ),
                 Bandera(
                     "Ceuta",
-                    "Tierra Norte",
+                    context.getString(R.string.ceuta_frase),
                     R.drawable.ceuta
-
                 ),
                 Bandera(
                     "Extremadura",
-                    "Tierra Norte",
+                    context.getString(R.string.extremadura_frase),
                     R.drawable.extremadura
-
                 ),
                 Bandera(
                     "Galicia",
-                    "Tierra Norte",
+                    context.getString(R.string.galicia_frase),
                     R.drawable.galicia
-
                 ),
                 Bandera(
                     "La Rioja",
-                    "Tierra Norte",
+                    context.getString(R.string.la_rioja_frase),
                     R.drawable.larioja
-
                 ),
                 Bandera(
                     "Madrid",
-                    "Tierra Norte",
+                    context.getString(R.string.madrid_frase),
                     R.drawable.madrid
-
                 ),
                 Bandera(
                     "Melilla",
-                    "Tierra Norte",
+                    context.getString(R.string.melilla_frase),
                     R.drawable.melilla
-
                 ),
                 Bandera(
                     "Murcia",
-                    "Tierra Norte",
+                    context.getString(R.string.murcia_frase),
                     R.drawable.murcia
-
                 ),
                 Bandera(
                     "Navarra",
-                    "Tierra Norte",
+                    context.getString(R.string.navarra_frase),
                     R.drawable.navarra
-
                 ),
                 Bandera(
                     "Pais Vasco",
-                    "Tierra Norte",
+                    context.getString(R.string.pais_vasco_frase),
                     R.drawable.paisvasco
-
                 ),
                 Bandera(
                     "Valencia",
-                    "Tierra Norte",
+                    context.getString(R.string.valencia_frase),
                     R.drawable.valencia
-
                 ),
-
-                )
-
-
+            )
         }
     }
 }
