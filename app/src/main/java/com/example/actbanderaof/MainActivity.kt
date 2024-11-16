@@ -1,6 +1,8 @@
 package com.example.actbanderaof
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -46,4 +48,28 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+    //menu
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_reload -> {
+                // recargar
+                listaBanderas.clear()
+                listaBanderas.addAll(BanderaProvider.cargarLista())
+                true
+            }
+            R.id.action_clear -> {
+                // limpiar la lista
+                listaBanderas.clear()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
 }
