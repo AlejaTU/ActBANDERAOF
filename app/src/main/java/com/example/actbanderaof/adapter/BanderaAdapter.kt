@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.actbanderaof.R
 import com.example.actbanderaof.model.Bandera
 
-class BanderaAdapter (private val lista: List<Bandera>): RecyclerView.Adapter<BanderaViewHolder>() {
+class BanderaAdapter (private val lista: List<Bandera>, private val onClickListener: (Bandera) -> Unit): RecyclerView.Adapter<BanderaViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BanderaViewHolder {
 //definir la celda
     val layoutInflater = LayoutInflater.from(parent.context)
@@ -19,7 +19,7 @@ class BanderaAdapter (private val lista: List<Bandera>): RecyclerView.Adapter<Ba
     override fun onBindViewHolder(holder: BanderaViewHolder, position: Int) {
        //en la posicion de la lista va a pasar el elemento que tenga en esa posicoin y decirle al holder que ponte esa celda
         val item = lista[position]
-        holder.render(item)
+        holder.render(item, onClickListener)
     }
 
     override fun getItemCount(): Int {
